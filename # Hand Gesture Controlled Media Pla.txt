@@ -1,0 +1,57 @@
+# Hand Gesture Controlled Media Player 🎥✋  
+Using Computer Vision
+
+## 📌 Project Overview
+The **Hand Gesture Controlled Media Player** is a computer vision–based system that allows users to control media playback using simple hand gestures. Instead of using a keyboard or mouse, users can perform actions such as play, pause, forward, backward, and volume control by raising specific numbers of fingers in front of a webcam.
+
+This project uses **MediaPipe** for hand landmark detection, **OpenCV** for video processing, and **PyAutoGUI** to simulate keyboard inputs, making it compatible with platforms like **YouTube** and **VLC Media Player**.
+
+---
+
+## 🚀 Features
+- Real-time hand gesture recognition  
+- Touchless media control  
+- Works with YouTube and VLC Media Player  
+- Simple and user-friendly gesture mapping  
+- Platform independent (keyboard-based control)
+
+---
+
+## 🛠️ Technologies Used
+- **Python**
+- **OpenCV** – Webcam access and image processing  
+- **MediaPipe** – Hand landmark detection (21 key points)  
+- **PyAutoGUI** – Keyboard automation for media control  
+
+---
+
+## 🧠 System Workflow
+1. Capture live video using a webcam  
+2. Detect hand landmarks using MediaPipe  
+3. Count the number of raised fingers  
+4. Map finger count to a media action  
+5. Trigger keyboard shortcuts using PyAutoGUI  
+
+---
+
+## ✋ Gesture to Action Mapping
+
+| Fingers Raised | Action        |
+|---------------|---------------|
+| 1             | Forward       |
+| 2             | Backward      |
+| 3             | Volume Up     |
+| 4             | Volume Down   |
+| 5             | Play / Pause  |
+
+---
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+- Python 3.7 or higher  
+- Webcam  
+
+### Install Required Libraries
+```bash
+pip install opencv-python mediapipe pyautogui
